@@ -1,38 +1,85 @@
-.App {
+/* App.css */
+
+/* Đặt nền và căn giữa toàn bộ ứng dụng */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Thiết kế container chính cho ứng dụng */
+.container {
   text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Căn chỉnh và thêm khoảng cách cho form */
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px; /* Thêm khoảng cách dưới form */
+}
+
+/* Phong cách cho ô input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Thêm khoảng cách giữa input và nút */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Phong cách cho nút submit */
+button {
+  background-color: #007bff;
   color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 10px; /* Thêm khoảng cách phía trên nút */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Phong cách cho thông báo tải dữ liệu */
+.loading {
+  color: #666;
+  font-size: 18px;
+  margin-top: 20px; /* Thêm khoảng cách phía trên */
+}
+
+/* Phong cách cho thông báo lỗi */
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px; /* Thêm khoảng cách phía trên */
+}
+
+/* Phong cách cho dữ liệu thời tiết */
+.weather-data {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px; /* Thêm khoảng cách phía trên */
 }
